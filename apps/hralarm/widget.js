@@ -10,7 +10,7 @@
       // Bluetooth.println(JSON.stringify({t:"intent", target:"activity", action:"android.media.action.MEDIA_PLAY_FROM_SEARCH", flags:["FLAG_ACTIVITY_NEW_TASK"], categories:["android.intent.category.DEFAULT"], extra:{"query":'track:"Sittin\' on the Dock of the Bay" artist:"Otis Redding"'}}))
       // Bluetooth.println(JSON.stringify({t:"intent", target:"activity", action:"android.intent.action.SENDTO", data:"smsto:1234567890", extra:{"sms_body":"Hello, this is a test SMS!"}}));
       var id = NRF.getAddress().substr().substr(12).split(":");
-      var url = "https://e68e-103-219-60-12.ngrok-free.app/sos?id=" + id;
+      var url = "https://e68e-103-219-60-12.ngrok-free.app/sos?id="+id+"&hr="+hr.bpm;
       Bangle.http(url).then(data=>{
         console.log("Got ",data);
       });
@@ -22,7 +22,7 @@
       // Bluetooth.println(JSON.stringify({t:"intent", target:"activity", action:"android.media.action.MEDIA_PLAY_FROM_SEARCH", flags:["FLAG_ACTIVITY_NEW_TASK"], categories:["android.intent.category.DEFAULT"], extra:{"query":'track:"Sittin\' on the Dock of the Bay" artist:"Otis Redding"'}}))
       // Bluetooth.println(JSON.stringify({t:"intent", target:"activity", action:"android.intent.action.SENDTO", data:"smsto:1234567890", extra:{"sms_body":"Hello, this is a test SMS!"}}));
       var id = NRF.getAddress().substr().substr(12).split(":");
-      var url = "https://e68e-103-219-60-12.ngrok-free.app/sos?id=" + id;
+      var url = "https://e68e-103-219-60-12.ngrok-free.app/sos?id="+id+"&hr="+hr.bpm;
       Bangle.http(url).then(data=>{
         console.log("Got ",data);
       });
@@ -35,7 +35,7 @@
       // Bluetooth.println(JSON.stringify({t:"intent", target:"activity", action:"android.media.action.MEDIA_PLAY_FROM_SEARCH", flags:["FLAG_ACTIVITY_NEW_TASK"], categories:["android.intent.category.DEFAULT"], extra:{"query":'track:"Sittin\' on the Dock of the Bay" artist:"Otis Redding"'}}))
       // Bluetooth.println(JSON.stringify({t:"intent", target:"activity", action:"android.intent.action.SENDTO", data:"smsto:1234567890", extra:{"sms_body":"Hello, this is a test SMS!"}}));
       var id = NRF.getAddress().substr().substr(12).split(":");
-      var url = "https://e68e-103-219-60-12.ngrok-free.app/sos?id=" + id;
+      var url = "https://e68e-103-219-60-12.ngrok-free.app/sos?id="+id+"&hr="+hr.bpm;
       Bangle.http(url).then(data=>{
         console.log("Got ",data);
       });
