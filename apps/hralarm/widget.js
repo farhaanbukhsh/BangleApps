@@ -14,8 +14,7 @@
       var url = "http://192.168.0.102:5000/sos/" + id;
       Bangle.http(url).then(data=>{
         console.log("Got ",data);
-      });}
-
+      });
     }
     if (hitLimit < getTime() && hr.bpm > settings.upper){
       hitLimit = getTime() + 10;
@@ -27,7 +26,8 @@
       var url = "http://192.168.0.102:5000/sos/" + id;
       Bangle.http(url).then(data=>{
         console.log("Got ",data);
-      });}
+      });
+    }
     if (hitLimit > 0 && hr.bpm < settings.lower){
       hitLimit = 0;
       Bangle.beep();
@@ -39,9 +39,7 @@
       var url = "http://192.168.0.102:5000/sos/" + id;
       Bangle.http(url).then(data=>{
         console.log("Got ",data);
-      });}
-
-    }
+      });
   };
   Bangle.on("HRM", checkHr);
   Bangle.on("BTHRM", checkHr);
